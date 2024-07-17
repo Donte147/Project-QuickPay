@@ -1,0 +1,823 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#toggle {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.navitems {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  gap: 80px;
+  padding: 15px;
+  z-index: 1;
+  box-shadow: #1c1c1c 0px 0px 8px;
+}
+
+.navimg img {
+  width: 151px;
+  height: 52px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+
+.navitems a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navitems a:hover {
+  color: #263586;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.btnGrp {
+  display: flex;
+}
+
+/* Section 1 */
+
+.Section1 {
+  background-image: url("image/Hero Sec.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sec1form h1 {
+  font-size: 70px;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  bottom: 23rem;
+  left: 20%;
+}
+
+.sec1form p {
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  bottom: 18rem;
+  padding: 4px;
+  left: 24%;
+  width: 52%;
+  text-align: center;
+}
+
+.applogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5rem;
+  left: 38%;
+  cursor: pointer;
+  gap: 20px;
+}
+
+/* Section 2 */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 5rem;
+}
+
+.service-card {
+  border: 2px solid #cecdcd;
+  border-top-color: rgb(228, 227, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 278px;
+  border-radius: 10px;
+  padding: 2.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icons h2 {
+  color: #263586;
+  padding: 6px 0.7rem;
+}
+
+.service-icon h2 {
+  color: #263586;
+  padding: 6px 0.7rem;
+}
+
+.service-icons .icon-map {
+  padding: 10px 1rem;
+  position: relative;
+  bottom: 2.5rem;
+  right: 1.8rem;
+  top: 0rem;
+}
+
+.service-icon .icon-map {
+  padding: 10px 1rem;
+  position: relative;
+  bottom: 3.5rem;
+  right: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section 3 */
+.sec3 {
+  background-color: #263586;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px 1rem;
+}
+
+.sec3 h2 {
+  font-size: 39px;
+  width: 58%;
+  padding: 40px;
+}
+
+/* Section 4 */
+.transactions {
+  background-color: #e9ebf380;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 6rem 4rem;
+}
+
+.sec4form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec4form h2 {
+  font-size: 46px;
+  color: #263586;
+  width: 80%;
+  position: relative;
+  top: 20px;
+  left: 17%;
+}
+
+.sec4form p {
+  font-size: 23px;
+  font-weight: 400;
+  color: #1c1c1c;
+  width: 44%;
+  line-height: 45px;
+  position: relative;
+  top: 40px;
+}
+
+.sec4img {
+  position: relative;
+  right: 45px;
+}
+
+/* Section 5 */
+.quickpay {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1c;
+  padding: 60px 2rem;
+}
+
+.sec5img {
+  position: relative;
+  left: 10rem;
+  top: 1.2rem;
+}
+
+.quickpay-form {
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80%;
+}
+
+.quickpay-form h2 {
+  font-size: 46px;
+  color: #263586;
+  width: 80%;
+  position: relative;
+  top: 30px;
+  left: 23.5%;
+}
+
+.quickpay-form p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1c1c1c;
+  width: 47%;
+  line-height: 40px;
+  position: relative;
+  top: 40px;
+  left: 6%;
+  padding: 10px 10px;
+}
+
+/* Section 6 */
+.growsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ebf380;
+  padding: 7rem 3rem;
+}
+
+.sec6form {
+  font-size: 28px;
+  padding: 10px 1rem;
+}
+
+.sec6form h2 {
+  font-size: 42px;
+  color: #263586;
+  width: 84%;
+  position: relative;
+  top: 14px;
+  left: 23.5%;
+}
+
+.sec6form p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1c1c1c;
+  width: 44%;
+  line-height: 40px;
+  position: relative;
+  top: 42px;
+  left: 23.5%;
+}
+
+.sec6form button {
+  background-color: #263586;
+  color: #fff;
+  border: none;
+  padding: 28px;
+  font-size: 19px;
+  font-weight: 400;
+  width: 40%;
+  position: relative;
+  top: 68px;
+  left: 23%;
+  cursor: pointer;
+}
+
+/* Section 7 */
+.customer-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 7rem 1rem;
+}
+
+.sec7img img {
+  width: 708px;
+  height: 489px;
+  border-radius: 10px;
+  position: relative;
+  left: 11%;
+}
+
+.sec7form h2 {
+  font-size: 40px;
+  color: #263586;
+  width: 70%;
+  position: relative;
+  bottom: 20px;
+  left: 20%;
+}
+
+.sec7form p {
+  font-size: 23px;
+  font-weight: 400;
+  color: #1c1c1c;
+  width: 62%;
+  line-height: 40px;
+  position: relative;
+  left: 20%;
+}
+
+.sec7form h4 {
+  text-decoration: underline;
+  color: #1c1c1c;
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 20%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Section 8 */
+.sec8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec8form h2 {
+  font-size: 49px;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  bottom: 20.5rem;
+}
+
+.herobanner img {
+  position: relative;
+  width: 120%;
+}
+
+.sec8form h3 {
+  font-size: 33px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  bottom: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 16rem;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* Section 9 */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.footer-logo img {
+  position: relative;
+  left: 70%;
+  bottom: 228px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 120px;
+  position: relative;
+  bottom: 140px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  color: #263586;
+}
+
+/* Section 10 */
+.footer-bottom {
+  border-top: 2px solid #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 80px;
+  width: 94%;
+  left: 50px;
+}
+
+.bottom-writeup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  font-size: 20px;
+}
+
+.bottom-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 29%;
+  gap: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navitems {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .navimg {
+    margin-right: auto;
+  }
+  .navitems a {
+    font-size: 1.1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+
+  .btnGrp {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 4px solid #1c1c1c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  #toggle:checked + .hamburger + .btnGrp {
+    display: flex;
+  }
+
+  .sec1form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 7rem; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec1form h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-right: 2rem;
+  }
+
+  .sec1form p {
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    /* bottom: 18rem; */
+    padding: 4px;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .applogo img {
+    min-width: 100%;
+    height: auto;
+    width: 40px;
+    position: relative;
+    /* bottom: 45px;/ */
+  }
+  .services {
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icon-map img {
+    width: 62px;
+    position: relative;
+    top: 76.6px;
+    padding: 5px;
+    right: 65px;
+  }
+  .service-icons .icon-map img {
+    width: 62px;
+    position: relative;
+    top: 22px;
+    left: 10px;
+  }
+  .service-card h2 {
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    bottom: 44px;
+    /* left: 14%; */
+  }
+  .service-icons h2 {
+    font-size: 14px;
+    width: 90%;
+    position: relative;
+    bottom: 50px;
+    left: 15%;
+  }
+  .service-card {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+    right: 2px;
+  }
+  .sec3 {
+    padding: 10px;
+  }
+  .sec3 h2 {
+    font-size: 20.9px;
+    width: 100%;
+    padding: 20px;
+  }
+  .transactions {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec4form {
+    padding: 10px;
+  }
+  .sec4form h2 {
+    font-size: 23.2px;
+    width: 160%;
+    top: 10px;
+    left: 1.5%;
+    text-align: center;
+  }
+  .sec4form p {
+    font-size: 18px;
+    width: 140%;
+    top: 27px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .sec4img img {
+    width: 400px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+  }
+  .quickpay {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec5img img {
+    width: 400px;
+    position: relative;
+    right: 40%;
+    padding: 18px;
+  }
+  .quickpay-form {
+    padding: 10px;
+  }
+  .quickpay-form h2 {
+    font-size: 23px;
+    width: 80%;
+    top: 10px;
+    left: 35px;
+  }
+  .quickpay-form p {
+    font-size: 18px;
+    width: 122%;
+    top: 20px;
+    left: 1%;
+    line-height: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .growsec {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec6form {
+    padding: 10px;
+  }
+  .sec6form h2 {
+    font-size: 23px;
+    width: 140%;
+    top: 20px;
+    left: 9%;
+  }
+  .sec6form p {
+    font-size: 17px;
+    width: 90%;
+    top: 30px;
+    left: 3%;
+    text-align: center;
+    line-height: 28px;
+    padding: 10px;
+  }
+  .sec6form button {
+    width: 110%;
+    height: 1rem;
+    font-size: 18px;
+    position: relative;
+    bottom: 40%;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec6img img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 40px;
+  }
+  .customer-service {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec7img img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+  .sec7form {
+    padding: 10px;
+  }
+  .sec7form h2 {
+    font-size: 23px;
+    width: 83%;
+    bottom: 10px;
+    left: 6%;
+    text-align: center;
+  }
+  .sec7form p {
+    font-size: 16px;
+    width: 100%;
+    bottom: 6px;
+    left: 1%;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .sec7form h4 {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 16px;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .sec8 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .herobanner img {
+    position: relative;
+    width: 211%;
+  }
+  .sec8form h2 {
+    font-size: 22px;
+    bottom: 228px;
+    left: 36px;
+    color: #fff;
+  }
+  .sec8form h3 {
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 190px;
+    left: 0;
+    color: #fff;
+  }
+  .sec8form .stores img {
+    width: 28%;
+    font-size: 20px;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 114px;
+  }
+  .herobanner {
+    position: relative;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-logo img {
+    width: 100%;
+    top: -38px;
+    left: -185px;
+  }
+  .footer-links {
+    flex-direction: column;
+    right: 166px;
+    top: -7px;
+    gap: 18px;
+  }
+  .footer-bottom {
+    list-style: none;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    margin-top: 120px;
+    top: 120%;
+    margin-right: 50%;
+  }
+  .bottom-writeup {
+    position: relative;
+    top: 30px;
+    right: 150px;
+  }
+  .footer-bottom .bottom-socials {
+    position: relative;
+    top: 46px;
+    right: 198px;
+    width: 10%;
+  }
+}
